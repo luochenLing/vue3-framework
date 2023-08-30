@@ -2,7 +2,7 @@ import { defineConfig } from "yapi-to-typescript";
 
 export default defineConfig([
   {
-    serverUrl: "http://47.110.247.201:8091/v2/api-docs/",//swagger的地址，但是要注意的是必须是json地址
+    serverUrl: "http://XXXX/v2/api-docs/",//swagger的地址，但是要注意的是必须是json地址
     typesOnly: false,//是否只生成接口请求内容和返回内容的 TypeSript 类型，是则请求文件和请求函数都不会生成。
     serverType:'swagger',//这里必须写，不然的话，默认是yapi的应该，无法生成swagger专属的文档
     target: "typescript",//要生成的目标代码类型。 默认为 typescript，若设为 javascript，会将生成的 .ts 文件转换为 .js + .d.ts 文件并删除原 .ts 文件。
@@ -37,7 +37,7 @@ export default defineConfig([
     ],
   },
   {
-    serverUrl: "http://apiplat.cbi360.net/swagger/v1/swagger.json",//swagger的地址，但是要注意的是必须是json地址
+    serverUrl: "http://XXXX",//swagger的地址，但是要注意的是必须是json地址
     typesOnly: false,//是否只生成接口请求内容和返回内容的 TypeSript 类型，是则请求文件和请求函数都不会生成。
     serverType:'swagger',//这里必须写，不然的话，默认是yapi的应该，无法生成swagger专属的文档
     target: "typescript",//要生成的目标代码类型。 默认为 typescript，若设为 javascript，会将生成的 .ts 文件转换为 .js + .d.ts 文件并删除原 .ts 文件。
